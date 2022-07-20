@@ -50,19 +50,3 @@ void display_readings(map<string, int> sampleRangeReadings)
         cout << a.first << ", " << a.second << endl;
     }
 }
-
-/*
-int main()
-{
-
-    
-	//int chargingSessionSamples[] = {};
-	int chargingSessionSamples[] = { -1, 3, 4, 5, 20, 21, 25, 12, 14, 15 };
-	int NumbersOfSamples = sizeof(chargingSessionSamples) / sizeof(chargingSessionSamples[0]);
-
-	auto sampleRangeReading = detectAndFetchSampleRanges(chargingSessionSamples, NumbersOfSamples);
-
-        display_readings(sampleRangeReading);
-
-}
-*/
