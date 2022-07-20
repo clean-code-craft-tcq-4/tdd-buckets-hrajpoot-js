@@ -11,7 +11,7 @@ map<string, int> detectAndFetchSampleRanges(int chargingSessionSamples[], int nu
     map<string, int> sampleRangeReading;
  
     //sort the samples
-    sortme(chargingSessionSamples, numberOfSamples);
+    sort(chargingSessionSamples, chargingSessionSamples+numberOfSamples);
 	
     for(int start = 1; start <= numberOfSamples; start++)
     {
