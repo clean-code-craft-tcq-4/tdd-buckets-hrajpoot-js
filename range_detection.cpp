@@ -9,12 +9,7 @@ map<string, int> detectAndFetchSampleRanges(int chargingSessionSamples[], int nu
 {
     int rangeReading = 1;
     map<string, int> sampleRangeReading;
-  
-    if (numberOfSamples == 0)
-    {
-        return sampleRangeReading;
-    }
-
+ 
     //sort the samples
     sortme(chargingSessionSamples, numberOfSamples);
 	
