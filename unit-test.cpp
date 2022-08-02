@@ -68,3 +68,7 @@ TEST_CASE("test sortme function")
     REQUIRE(isArraySorted == true);
 }
 
+TEST_CASE("test bits to amps conversion")
+{
+    REQUIRE(bit_to_amps_conversion(1146) == 3);
+}
