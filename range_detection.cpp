@@ -5,6 +5,11 @@ void sortme(int arr[], int size)
     sort(arr, arr+size);
 }
 
+int bit_to_amps_conversion(double bitInput)
+{
+    return round( (10 * bitInput) / 4094 );
+}
+
 map<string, int> detectAndFetchSampleRanges(int chargingSessionSamples[], int numberOfSamples)
 {
     int rangeReading = 1;
