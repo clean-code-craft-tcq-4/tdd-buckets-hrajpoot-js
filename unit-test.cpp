@@ -72,3 +72,15 @@ TEST_CASE("test bits to amps conversion")
 {
     REQUIRE(bit_to_amps_conversion(1146) == 3);
 }
+
+TEST_CASE("high fidelity current sensing with error case")
+{
+    auto outputStr = high_fidelity_current_sensing(5000);
+    REQUIRE(outputStr == "An error case");
+}
+
+TEST_CASE("high fidelity current sensing with 10A")
+{
+    auto outputStr = high_fidelity_current_sensing(4049);
+    REQUIRE(outputStr == "10A");
+}
